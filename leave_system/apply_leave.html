@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Leave</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Apply Leave</h1>
+    <form method="POST">
+        <label>Leave Type:</label>
+        <select name="leave_type" required>
+            <option value="Sick">Sick Leave</option>
+            <option value="Casual">Casual Leave</option>
+        </select>
+        <label>Start Date:</label>
+        <input type="date" name="start_date" required>
+        <label>End Date:</label>
+        <input type="date" name="end_date" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> 
